@@ -1,0 +1,129 @@
+
+/** contact-section **/
+
+.contact-section{
+  position: relative;
+}
+
+.contact-section .content-box{
+  position: relative;
+  display: block;
+}
+
+.contact-section .content-box .info-list li{
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 34px;
+}
+
+.contact-section .content-box .info-list li:last-child{
+  margin-bottom: 0px;
+}
+
+.contact-section .content-box .info-list li .icon{
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  font-size: 20px;
+  color: var(--theme-color);
+}
+
+.contact-section .content-box .info-list li:last-child .icon{
+  font-size: 14px;
+}
+
+.contact-section .content-box .info-list li h4{
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-section .content-box .info-list li p{
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.contact-section .content-box .info-list li p a{
+  display: inline-block;
+  color: var(--text-color);
+}
+
+.contact-section .content-box .info-list li p a:hover{
+  text-decoration: underline;
+}
+
+.contact-section .form-inner{
+  position: relative;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 70px;
+}
+.loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.error-message br+br {
+  margin-top: 25px;
+}
+
+
+
+.sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
